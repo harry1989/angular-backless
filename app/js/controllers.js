@@ -42,6 +42,7 @@ var ctrlModule = angular.module('myApp.controllers', []).
 
         $scope.logOut = function () {
             authService.logOut();
+            $location.path('/dashboard');
         };
     }]);
 
