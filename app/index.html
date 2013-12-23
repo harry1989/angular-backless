@@ -36,7 +36,7 @@
                 <li ng-class="{active: routeIs('/activities')}" ng-show="authService.isSignedIn" ng-cloak><a href="#/activities">Activities</a></li>
                 <li ng-class="{active: routeIs('/signup')}" ng-show="!authService.isSignedIn" ng-cloak><a href="#/signup">Sign Up</a></li>
                 <li ng-class="{active: routeIs('/signin')}" ng-show="!authService.isSignedIn" ng-cloak><a href="#/signin">Sign In</a></li>
-                <li ng-show="authService.isSignedIn"><a href="#/home" ng-click="authService.logOut()" ng-cloak>Sign Out</a></li>
+                <li ng-show="authService.isSignedIn"><a ng-click="authService.logOut()" ng-cloak>Sign Out</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
